@@ -2,7 +2,7 @@
 This is the timer software Canoe Freestyle competitions. The timer complies with ICF Canoe Freestyle Competition Rules 2019. 
 
 Operation is very simple:
-- Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay.
+- Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay. Piezo buzzer provides audible signal that timer is running. 
 - One tone is played 10 seconds before end. 
 - Two tones are played in the end.
 - Blinking "X" is played when the time has finished.
@@ -23,9 +23,9 @@ This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2
 System has the following components:
 - Adrduino Uno microcontroller
 - 2 x 32x16 LED matrix display, type HUB12
-- Handheld switch for the start button.
-- Signal generator, amplifier, and horn loud speaker
-- Power supply (battery) and voltage stabilizers
+- Handheld switch for the start button, with 10 kohm resistor and piezo buzzer connected through Velleman VMA411 Mos Driving Module (see www.velleman.eu).
+- Signal generator, amplifier, and horn loud speaker, connected through Velleman VMA411 Mos Driving Module (see www.velleman.eu)
+- Power supply (12 VDC battery) and voltage stabilizers
 
 ## Installation
 
