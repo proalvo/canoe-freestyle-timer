@@ -32,7 +32,9 @@ System has the following components:
 Note: This software is useless without required hardware components. However, you may download the software for learning and development purposes even if you do not have the hardware.
 
 1. Install Arduino IDE from https://arduino.cc to to your computer. 
+1. Run Arduino IDE and install DMD2 library
 1. Run "git clone https://github.com/proalvo/canoe-freestyle-timer.git"
+1. Copdy files from "fonts" directory to "libraries\DMD2\fonts".
 1. Connect Arduino UNO to your computer
 1. Open the file canoe-freestyle-timer.ino with Arduino INO
 1. Upload the code to your Arduino Uno
