@@ -15,6 +15,9 @@ Time is outputted to serial port of the Arduino Uno, which enables addtional fun
 
 Software uses DMD2 library, which provides functionality write text and numbers to LED Screen. This library is available from https://github.freetronics/DMD2. I have made own fonts that are more suitable for the timer display.
 
+# Author
+Kari Nykänen, k_nykanen (at) hotmail.com
+
 ## License
 
 This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007. Read the LICENSE file.
@@ -24,7 +27,7 @@ System has the following components:
 - Adrduino Uno microcontroller
 - 2 x 32x16 LED matrix display, type HUB12
 - Handheld switch for the start button, with 10 kohm resistor and piezo buzzer connected through Velleman VMA411 Mos Driving Module (see www.velleman.eu).
-- Signal generator, amplifier, and horn loud speaker, connected through Velleman VMA411 Mos Driving Module (see www.velleman.eu)
+- Signal generator, amplifier, and horn loud speaker, connected through Velleman VMA411 Mos Driving Module (see www.velleman.eu) and relay.
 - Power supply (12 VDC battery) and voltage stabilizers
 
 ## Installation
@@ -41,4 +44,5 @@ Note: This software is useless without required hardware components. However, yo
 1. Connect the hardware components.
 
 Now you are ready. Just press the start button.
+
 
