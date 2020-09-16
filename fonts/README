@@ -1,0 +1,1 @@
+These files provide fonts for the Timer for Canoe Freestyle. Install first the DMD2 library and then copy fonts to Arduino IDE's "libraries\DMD2\fonts" directry. 
