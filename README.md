@@ -1,5 +1,5 @@
 # Timer for Canoe Freestyle 
-Timer for Canoe Freestyle, as the name says, is the timer for competitions. The timer complies with ICF Canoe Freestyle Competition Rules 2019. 
+This is the timer software Canoe Freestyle competitions. The timer complies with ICF Canoe Freestyle Competition Rules 2019. 
 
 Operation is very simple:
 - Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay.
