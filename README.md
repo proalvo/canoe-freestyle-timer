@@ -47,5 +47,5 @@ Now you are ready. Just press the start button.
 
 ## Time for streaming video
 
-Arduino Uno has USB port which cane be transfer competition time to external device. I made Raspberry Pi based device to provide time fro streaming video. See detailes at https://github.com/proalvo/green-screen
+Arduino Uno has USB port which can transfer competition time to external device. I made Raspberry Pi based device to provide time fro streaming video. See detailes at https://github.com/proalvo/green-screen
 
