@@ -5,7 +5,7 @@ Author: Kari Nykänen k_nykanen@hotmail.com
 
 Version: 1.6, output to serial port has been updated
 20/10/2020 Version: 1.7, start the timer if "S"tart is received from the serial port 
-02/04/2020 Version: 1.8, added support for the rotary switch to change the competition time 
+02/04/2021 Version: 1.8, added support for the rotary switch to change the competition time 
 
 Complies with rules for surface boats:
 ICF Canoe Freestyle Competition Rules 2019
