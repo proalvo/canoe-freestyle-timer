@@ -5,7 +5,7 @@ Author: Kari Nykänen k_nykanen@hotmail.com
 
 Version: 1.6, output to serial port has been updated
 20/10/2020 Version: 1.7, start the timer if "S"tart is received from the serial port 
-02/04/2021 Version: 1.8, added support for the rotary switch to change the competition time 
+02/04/2020 Version: 1.8, added support for the rotary switch to change the competition time 
 
 Complies with rules for surface boats:
 ICF Canoe Freestyle Competition Rules 2019
@@ -68,7 +68,6 @@ boolean playTone = false;
 boolean playToneOK = false; 
 boolean playStartBuzzer = false;
 boolean buttonActive = false;
-boolean longPressActive = false;  // obsolete?
 
 const int buttonPin = 2;          // pushbutton pin 
 const int buzzerPin = 3;          // end buzzer pin 3
@@ -85,10 +84,6 @@ const int MODE_RUN    = 1;     // running the competition
 const int MODE_END_1  = 2;   // play the end tone 
 const int MODE_END_2  = 3;   // 
 int mode;  
-
-// int fromTime = 45;
-
-//char temp[15]; // tämä on testausta varten 9.9.2020
 
 char serialCharTime[4]; 
 String serialStringTime;
