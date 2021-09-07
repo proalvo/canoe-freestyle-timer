@@ -1,5 +1,5 @@
 # Timer for Canoe Freestyle 
-This is the timer software Canoe Freestyle competitions. The timer complies with ICF Canoe Freestyle Competition Rules 2019. 
+This is the timer software for Canoe Freestyle competitions. The timer complies with ICF Canoe Freestyle Competition Rules 2019. 
 
 Operation is very simple:
 - Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay. Piezo buzzer provides audible signal that timer is running. 
@@ -10,7 +10,7 @@ Operation is very simple:
 
 See the video on YouTube https://youtu.be/Ev1N3gt9AcE
 
-Software is running on Arduino Uno, which is connected to LED display, loud speaker and switch. The switch is used to start the timer. 
+Software is running on Arduino Uno, which is connected to LED display, loud speaker (including tone genretator and amplifier) and switch. The switch is used to start the timer. 
 Time is outputted to serial port of the Arduino Uno, which enables addtional functionality outside of the Timer. 
 
 Software uses DMD2 library, which provides functionality write text and numbers to LED Screen. This library is available from https://github.freetronics/DMD2. I have made own fonts that are more suitable for the timer display.
@@ -47,5 +47,5 @@ Now you are ready. Just press the start button.
 
 ## Time for streaming video
 
-Arduino Uno has USB port which can transfer competition time to external device. I made Raspberry Pi based device to provide time fro streaming video. See detailes at https://github.com/proalvo/green-screen
+Arduino Uno has USB port which can transfer competition time to external device. I made Raspberry Pi based device to provide time for streaming video. See detailes at https://github.com/proalvo/green-screen
 
