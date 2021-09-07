@@ -93,6 +93,7 @@ int incomingByte = 0; // ver 1.7
 
 /* ***********************************************************************************************
 // routine to setup the competition time
+// this is not complete as I have more switch positions than the time values in use. 45s is to support ICF rules and 60s for novice
 **************************************************************************************************/
 
 
