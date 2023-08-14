@@ -1,5 +1,5 @@
 # Timer for Canoe Freestyle 
-This is the timer software for Canoe Freestyle competitions. The timer complies with International Canoe Federation's (ICF) Canoe Freestyle Competition Rules 2019. 
+This is the timer software for Canoe Freestyle competitions. The timer complies with International Canoe Federation's (ICF) Canoe Freestyle Competition Rules 2023 for K1, C1, OC1. Squirt is not supported.
 
 Operation is very simple:
 - Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay. Piezo buzzer provides audible signal that timer is running. 
@@ -21,6 +21,19 @@ Kari Nykänen, k_nykanen (at) hotmail.com
 ## License
 
 This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007. Read the LICENSE file.
+
+## Comliance with ICF rules
+
+ICF Rules 2023: https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf
+
+Following rules apply:
+
+*5.1.3.a - Where possible, a countdown clock, visible to the athlete, will display
+the time remaining for each run.*
+
+*5.2.5 - The run is audibly finished by an audible warning signal. Ten (10)
+seconds prior to the run finishing a different or shorter audible warning signal
+informs the athlete of the time remaining.*
 
 ## Hardware
 System has the following components:
