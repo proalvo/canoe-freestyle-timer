@@ -3,10 +3,12 @@ This is the timer software for Canoe Freestyle competitions. The timer complies 
 
 Operation is very simple:
 - Press a button to start the timer which is running from 45 seconds down to 0. Time is shown on LED dislay. Piezo buzzer provides audible signal that timer is running. 
+- Timing can be interrupted by pressing the button 3 seconds. 
 - One tone is played 10 seconds before end. 
 - Two tones are played in the end.
 - Blinking "X" is played when the time has finished.
 - The timer is ready for the new run immediately after finishing the time.
+
 
 See the video on YouTube https://youtu.be/Ev1N3gt9AcE
 
