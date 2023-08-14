@@ -1,4 +1,4 @@
-/*
+  /*
 
 Timer for Freestyle Canoe
 Author: Kari Nykänen k_nykanen@hotmail.com
@@ -6,10 +6,20 @@ Author: Kari Nykänen k_nykanen@hotmail.com
 Version: 1.6, output to serial port has been updated
 20/10/2020 Version: 1.7, start the timer if "S"tart is received from the serial port 
 02/04/2020 Version: 1.8, added support for the rotary switch to change the competition time 
+15/05/2022 Version: 1.9, added option to interrupt the run byt pressins start button during 3 seconds
+14/08/2023 Version: 1.10, fixed bug with interrupton of the run. Horn continued playing if time was 10-11s and the run was interrpted.
 
 Complies with rules for surface boats:
-ICF Canoe Freestyle Competition Rules 2019
-https://www.canoeicf.com/sites/default/files/rules_canoe_freestyle_2019.pdf
+ICF Canoe Freestyle Competition Rules 2023
+https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf 
+
+5.1.3.a - Where possible, a countdown clock, visible to the athlete, will display
+the time remaining for each run.
+
+5.2.5 - The run is audibly finished by an audible warning signal. Ten (10)
+seconds prior to the run finishing a different or shorter audible warning signal
+informs the athlete of the time remaining.
+
 
 Arduino Uno digital pin connections:
 
@@ -83,17 +93,21 @@ const int MODE_READY  = 0;   // ready to start
 const int MODE_RUN    = 1;     // running the competition
 const int MODE_END_1  = 2;   // play the end tone 
 const int MODE_END_2  = 3;   // 
+const int MODE_RESET  = 4;   // run was interrupted byt time keeper
+
 int mode;  
 
 char serialCharTime[4]; 
 String serialStringTime;
 boolean x = false;
 
+unsigned long resetTime = 0; // timer to reset the time during the run
+boolean resetActive = false;
+
 int incomingByte = 0; // ver 1.7
 
 /* ***********************************************************************************************
 // routine to setup the competition time
-// this is not complete as I have more switch positions than the time values in use. 45s is to support ICF rules and 60s for novice
 **************************************************************************************************/
 
 
@@ -202,9 +216,26 @@ void loop() {
         dmd.selectFont(Timer32);              // set font
         digitalWrite(buzzerStartPin,HIGH);    // play sound to start the run 
         playStartBuzzer = true;
+      } 
+      else if (mode == MODE_RUN && resetActive==false) {
+        if (millis() - startMillis > 3000) {
+          resetTime=millis();
+          resetActive = true;
+        
+        }
+      } 
+      else if (mode == MODE_RUN && resetActive==true) {
+        if ( millis() - resetTime > 3000 ) {
+          // resetActive = false;  
+          mode = MODE_RESET;
+          digitalWrite(buzzerPin,LOW); // make sure that buzzer is silenced, version 1.10
+        }
       }
+      
 
-  }
+  } else if ( resetActive == true ) {
+    resetActive=false;
+  } 
 
   currentMillis = millis();  // set current time in millis
 
@@ -376,5 +407,18 @@ void loop() {
   }
 
   } // #mode_end_2
-  
+    if ( mode == MODE_RESET ){
+      Serial.write("  \n");
+      dmd.clearScreen();
+      dmd.selectFont(Timerx32x32);
+      digitalWrite(buzzerStartPin,HIGH);
+      dmd.drawString(0,0,"X");
+      delay(1000);
+      digitalWrite(buzzerStartPin,LOW);
+      delay(2000);
+      dmd.clearScreen();
+      dmd.selectFont(Timer32);
+      dmd.drawString(1,0,String(RUN_TIME/1000));
+      mode = MODE_READY;
+    }
 }  // the end
