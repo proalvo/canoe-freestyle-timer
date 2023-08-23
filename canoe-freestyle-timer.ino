@@ -1,4 +1,4 @@
-  /*
+/*
 
 Timer for Freestyle Canoe
 Author: Kari Nykänen k_nykanen@hotmail.com
@@ -7,7 +7,7 @@ Version: 1.6, output to serial port has been updated
 20/10/2020 Version: 1.7, start the timer if "S"tart is received from the serial port 
 02/04/2020 Version: 1.8, added support for the rotary switch to change the competition time 
 15/05/2022 Version: 1.9, added option to interrupt the run byt pressins start button during 3 seconds
-14/08/2023 Version: 1.10, fixed bug with interrupton of the run. Horn continued playing if time was 10-11s and the run was interrpted.
+14/08/2023 Version: 1.10, fixed bug with interrupton of the run. Horn continued playing if time was 10-11s and the run was interrupted. It was also possible that horn did not play 10 s warning during next run.
 
 Complies with rules for surface boats:
 ICF Canoe Freestyle Competition Rules 2023
@@ -229,6 +229,8 @@ void loop() {
           // resetActive = false;  
           mode = MODE_RESET;
           digitalWrite(buzzerPin,LOW); // make sure that buzzer is silenced, version 1.10
+          playTone = false; // version 1.10
+          playToneOK = false; // version 1.10
         }
       }
       
