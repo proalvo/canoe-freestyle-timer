@@ -24,7 +24,7 @@ Kari Nykänen, k_nykanen (at) hotmail.com
 
 This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007. Read the LICENSE file.
 
-## Comliance with ICF rules
+## Compliance with ICF rules
 
 ICF Rules 2023: https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf
 
