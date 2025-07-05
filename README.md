@@ -26,14 +26,16 @@ This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2
 
 ## Compliance with ICF rules
 
-ICF Rules 2023: https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf
+ICF Rules 2025:
+[ https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf](https://www.canoeicf.com/sites/default/files/2025_icf_competition_rules_canoe_freestyle_-_final.pdf)
+[ https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf](https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf)
 
 Following rules apply:
 
 *5.1.3.a - Where possible, a countdown clock, visible to the athlete, will display
 the time remaining for each run.*
 
-*5.2.5 - The run is audibly finished by an audible warning signal. Ten (10)
+*Appendix 7, chapter A5 - The run is audibly finished by an audible warning signal. Ten (10)
 seconds prior to the run finishing a different or shorter audible warning signal
 informs the athlete of the time remaining.*
 
