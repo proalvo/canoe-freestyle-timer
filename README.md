@@ -27,8 +27,8 @@ This software is licensed under GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2
 ## Compliance with ICF rules
 
 ICF Rules 2025:
-[ https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf](https://www.canoeicf.com/sites/default/files/2025_icf_competition_rules_canoe_freestyle_-_final.pdf)
-[ https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf](https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf)
+- [ https://www.canoeicf.com/sites/default/files/2023_competition_rules_canoe_freestyle.pdf](https://www.canoeicf.com/sites/default/files/2025_icf_competition_rules_canoe_freestyle_-_final.pdf)
+- [ https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf](https://www.canoeicf.com/sites/default/files/2025_cfr_appendices.pdf)
 
 Following rules apply:
 
